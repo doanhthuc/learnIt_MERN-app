@@ -1,0 +1,50 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "prime",
+    "password": "1"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "doanhthuc",
+    "password": "1"
+}
+
+###
+POST http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDc2ZjBlNmNlMmQxMjEyZmNlMWI1MmEiLCJpYXQiOjE2MTg0MDgxNDl9.Tog922syUhA2FJWAv27c5tOAjyzsoYq9mHUV2noDBy4
+
+{
+    "title": "react",
+    "description": "framework",
+    "url": "github.io/react.com",
+    "status": "LEARNING"
+}
+
+###
+GET http://localhost:5000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
+
+
+###
+PUT http://localhost:5000/api/post/6076b712014fd9495c4223dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
+
+{
+    "title": "Vue",
+    "description": "framework Vue js",
+    "url": "https://vue.org",
+    "status": "TO LEARN"
+}
+
+###
+DELETE http://localhost:5000/api/post/6076b712014fd9495c4223dc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
