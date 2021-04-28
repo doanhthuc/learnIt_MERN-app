@@ -7,7 +7,7 @@ const About = () => {
             <Col className="text-center">
                 <Button
                     variant="primary"
-                    href="https://github.com/doanhthuc?tab=repositories"
+                    href="https://github.com/doanhthuc/learnIt_MERN-app"
                     size="lg"
                 >
                     Go to github repositories

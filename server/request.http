@@ -17,24 +17,24 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/api/post
+POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDc2ZjBlNmNlMmQxMjEyZmNlMWI1MmEiLCJpYXQiOjE2MTg0MDgxNDl9.Tog922syUhA2FJWAv27c5tOAjyzsoYq9mHUV2noDBy4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
 
 {
-    "title": "react",
+    "title": "reactJS",
     "description": "framework",
     "url": "github.io/react.com",
-    "status": "LEARNING"
+    "status": "TO LEARN"
 }
 
 ###
-GET http://localhost:5000/api/post
+GET http://localhost:5000/api/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
 
 
 ###
-PUT http://localhost:5000/api/post/6076b712014fd9495c4223dc
+PUT http://localhost:5000/api/posts/6076b712014fd9495c4223dc
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM
 
@@ -46,5 +46,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwM
 }
 
 ###
-DELETE http://localhost:5000/api/post/6076b712014fd9495c4223dc
+DELETE http://localhost:5000/api/posts/6076b712014fd9495c4223dc
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MDcwMmM0NTg3MTQ0OTBkZTA0NDVjNzAiLCJpYXQiOjE2MTg0NTIyNjl9.ksVvvE-Hd8SLAF85CqlhrChGnJ_G3YRKqp6JwE_C_nM

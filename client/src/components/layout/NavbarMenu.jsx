@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Nav, Navbar, NavbarBrand, NavLink } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import { Link } from 'react-router-dom';
 import learnItLogo from '../../assets/logo.svg';
 import logoutIcon from '../../assets/logout.svg';
+import { AuthContext } from '../../contexts/AuthContext';
 
 const NavbarMenu = () => {
+    const {
+        authState: {
+            user: { username },
+        },
+        logoutUser,
+    } = useContext(AuthContext);
+
+    const logout = () => logoutUser();
     return (
         <Navbar expand="lg" bg="primary" variant="dark" className="shadow">
             <NavbarBrand className="font-weight-bolder text-white">
@@ -40,11 +49,12 @@ const NavbarMenu = () => {
 
                 <Nav>
                     <NavLink className="font-weight-bolder text-white" disabled>
-                        Welcome Prime
+                        Welcome {username}
                     </NavLink>
                     <Button
                         variant="secondary"
                         className="font-weight-bolder text-white"
+                        onClick={logout}
                     >
                         <img
                             src={logoutIcon}
